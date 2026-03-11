@@ -1,2 +1,2 @@
-require './server'
-run  HelloWorld.new
+require "./server"
+run HelloWorld.new

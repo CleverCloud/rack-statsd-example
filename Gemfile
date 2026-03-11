@@ -1,6 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rack' 
-gem 'statsd-instrument'
-# Added at 2018-01-16 02:46:51 +0100 by ldoguin:
-gem "puma", "~> 3.11"
+ruby ">= 3.3"
+
+gem "logger"
+gem "rack", "~> 3.2"
+gem "rackup", "~> 2.3"
+gem "puma", "~> 7.2"
+gem "statsd-instrument", "~> 3.9"

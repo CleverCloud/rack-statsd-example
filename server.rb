@@ -1,7 +1,8 @@
-require 'statsd-instrument'
+require "statsd-instrument"
+
 class HelloWorld
   def call(env)
-     StatsD.increment('helloItsMe')
-     [200, {"Content-Type" => "text/plain"}, ["Hello world!"]]
+    StatsD.increment("hello_requests")
+    [200, {"content-type" => "text/plain"}, ["Hello world!"]]
   end
 end
